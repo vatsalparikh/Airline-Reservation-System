@@ -1,0 +1,24 @@
+try (Connection conn=MySQLJDBCUtil.getConnection())
+	Statetment st=conn.createStatement();
+	//active flights
+	Result Set rs1=st.executeQuery("select legs_flight_number,legs_airline_id from Legs 
+	where if(arriving_time!=NULL, arriving_time,arrival_time)>now() and now()> if (departing_time!=NULL,departing_time,departure_time))");
+	
+	//delayed flights
+	Result Set rs2=st.executeQuery("select legs_flight_number, legs_airline_id 
+	from Legs
+	where arriving_time!=NULL and  arriving_time>now() and arriving_time>arrival_time
+	and departing_time!=NULL and departing_time>departure_time");
+	
+	//on time flights
+	Result Set rs3=st.executeQuery("select legs_flight_number, legs_airline_id from Legs
+	where arriving_time!=NULL and  arriving_time>now() and arriving_time<=arrival_time
+	and departing_time!=NULL and departing_time<=departure_time)");
+	
+	Calendar cal=Calendar.getInstance()
+	
+	PreparedStatement st2 = conn.prepareStatement("select sum(booking_fee) from Reservations where month(reservation_date)=?")
+	
+	st2.setInt(1,cal.get(Calendar.MONTH)+1)
+	
+	Result Set rs4 = st2.executeQuery()

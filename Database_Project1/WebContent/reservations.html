@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html>
+<title>
+SOARING SKIES
+</title>
+<div id="header">
+<head id="header">SOARING SKIES
+ <link rel="stylesheet" type="text/css" href="skies.css">
+</head>
+</div>
+<body>
+<a href = "logout.jsp">Logout</a>
+<br>
+<br>
+<form name=frm  method="post">
+<table> Book Flights
+<tr>
+<tr><td><b>start:</b></td></table>
+<select name="city">
+  <option value="Atlanta">Atlanta</option>
+  <option value="Boston">Boston</option>
+  <option value="Denver">Denver</option>
+  <option value="Washington">Washington</option>
+</select> </tr>
+<table>
+<tr>
+<tr><td><b>destination:</b></td></table>
+<select name="city">
+  <option value="Atlanta">Atlanta</option>
+  <option value="Boston">Boston</option>
+  <option value="Denver">Denver</option>
+  <option value="Washington">Washington</option>
+</select> </tr></table><br>
+<tr>date<input type="date" name="bday"></tr>
+<br>
+<input id="Submit" name="book" method="post" type="submit" action="signup1.php" value="Submit" />
+</form>
+<br>
+<br>
+
+-----------------------View Current Reservations-------------------<br>
+<form action="currentreservations.jsp" method="post">
+<input name="submit" method="post" type="submit" action="currentreservations.jsp" value="View current reservations" />
+</form>
+<br>
+
+----------------Travel Itinerary for selected Reservation-----------<br>
+<form action="travelitinerary.jsp" method="post">
+<table>
+<tr>
+<td><b>Reservation Number:</b></td>
+<td>
+<input id="res_num" name="res_no" type="text" size="20" style="width:146px; border:1px solid #999999" /></tr><tr>
+</tr>
+</table>
+<input name="submit" method="post" type="submit" action="travelitinerary.jsp" value="Submit" />
+</form>
+<br>
+
+-----------------------View Reservations History-------------------<br>
+<form action="reservationshistory.jsp" method="post">
+<input name="submit" method="post" type="submit" action="reservationshistory.jsp" value="View Current and Past Reservations" />
+</form>
+<br>
+
+-----------------------Best Seller Flight-------------------<br>
+<form action="activeflight.jsp" method="post">
+<input name="submit" method="post" type="submit" action="activeflight.jsp" value="View Best Seller Flight" />
+</form>
+<br>
+
+----------------Update existing info-----------<br>
+<form method="post" action="updatename.jsp">
+<table>
+<tr>
+<td><b>account no :</b></td>
+<td>
+<input id="FirstName" name="accnum" type="text" size="20" style="width:146px; border:1px solid #999999" /></tr><tr>
+<td><b>First Name :</b></td>
+<td>
+<input id="FirstName" name="fname" type="text" size="20" style="width:146px; border:1px solid #999999" /></tr>
+</table>
+<input name="submit" method="post" type="submit" action="updatename.jsp" value="Submit" />
+</form>
+
+<form method="post" action="updatelname.jsp">
+<table>
+<tr>
+<td><b>account no :</b></td>
+<td>
+<input id="FirstName" name="accnum" type="text" size="20" style="width:146px; border:1px solid #999999" /></tr><tr><tr>
+<td><b>last Name :</b></td>
+<td>
+<input id="FirstName" name="lname" type="text" size="20" style="width:146px; border:1px solid #999999" /></tr>
+</table><input name="submit" method="post" type="submit" action="updatelname.jsp" value="Submit" />
+</form>
+
+<form method="post" action="updateaddress.jsp">
+<table>
+<tr>
+<td><b>account no :</b></td>
+<td>
+<input id="FirstName" name="accnum" type="text" size="20" style="width:146px; border:1px solid #999999" /></tr><tr><tr>
+<td><b>address :</b></td>
+<td>
+<input id="FirstName" name="add" type="text" size="20" style="width:146px; border:1px solid #999999" /></tr>
+</table><input name="submit" method="post" type="submit" action="updateaddress.jsp" value="Submit" />
+</form>
+
+<form method="post" action="updatecity.jsp">
+<table>
+<tr>
+<td><b>account no :</b></td>
+<td>
+<input id="FirstName" name="accnum" type="text" size="20" style="width:146px; border:1px solid #999999" /></tr><tr><tr>
+<td><b>city:</b></td>
+<td>
+<input id="FirstName" name="city" type="text" size="20" style="width:146px; border:1px solid #999999" /></tr>
+</table>
+<input name="submit" method="post" type="submit" action="updatecity.jsp" value="Submit" />
+</form>
+
+<form method="post" action="updatestate.jsp">
+<table>
+<tr>
+<td><b>account no :</b></td>
+<td>
+<input id="FirstName" name="accnum" type="text" size="20" style="width:146px; border:1px solid #999999" /></tr><tr><tr>
+<td><b>state:</b></td>
+<td>
+<input id="FirstName" name="state" type="text" size="20" style="width:146px; border:1px solid #999999" /></tr>
+</table><input name="submit" method="post" type="submit" action="updatestate.jsp" value="Submit" />
+</form>
+
+<form method="post" action="updatecountry.jsp">
+<table>
+<tr>
+<td><b>account no :</b></td>
+<td>
+<input id="FirstName" name="accnum" type="text" size="20" style="width:146px; border:1px solid #999999" /></tr><tr><tr>
+<td><b>country:</b></td>
+<td>
+<input id="FirstName" name="country" type="text" size="20" style="width:146px; border:1px solid #999999" /></tr>
+</table><input name="submit" method="post" type="submit" action="updatecountry.jsp" value="Submit" />
+</form>
+
+<form method="post" action="updatezip.jsp">
+<table>
+<tr>
+<td><b>account no :</b></td>
+<td>
+<input id="FirstName" name="accnum" type="text" size="20" style="width:146px; border:1px solid #999999" /></tr><tr><tr>
+<td><b>Zip:</b></td>
+<td>
+<input id="FirstName" name="zip" type="text" size="20" style="width:146px; border:1px solid #999999" /></tr>
+</table><input name="submit" method="post" type="submit" action="updatezip.jsp" value="Submit" />
+</form>
+
+<form method="post" action="updatephn.jsp">
+<table>
+<tr>
+<td><b>account no :</b></td>
+<td>
+<input id="FirstName" name="accnum" type="text" size="20" style="width:146px; border:1px solid #999999" /></tr><tr><tr>
+<td><b>phone:</b></td>
+<td>
+<input id="FirstName" name="phn" type="text" size="20" style="width:146px; border:1px solid #999999" /></tr>
+</table><input name="submit" method="post" type="submit" action="updatephn.jsp" value="Submit" />
+</form>
+
+<form method="post" action="updateema.jsp">
+<table>
+<tr>
+<td><b>account no :</b></td>
+<td>
+<input id="FirstName" name="accnum" type="text" size="20" style="width:146px; border:1px solid #999999" /></tr><tr><tr>
+<td><b>email:</b></td>
+<td>
+<input id="FirstName" name="ema" type="text" size="20" style="width:146px; border:1px solid #999999" /></tr>
+</table><input name="submit" method="post" type="submit" action="updateema.jsp" value="Submit" />
+</form>
+
+<form method="post" action="updateccnum.jsp">
+<table>
+<tr>
+<td><b>account no :</b></td>
+<td>
+<input id="FirstName" name="accnum" type="text" size="20" style="width:146px; border:1px solid #999999" /></tr><tr><tr>
+<td><b>credit card number:</b></td>
+<td>
+<input id="FirstName" name="ccnum" type="text" size="20" style="width:146px; border:1px solid #999999" /></tr>
+</table><input name="submit" method="post" type="submit" action="updateccnum.jsp" value="Submit" />
+</form>
+<br>
+<br>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+<title>
+SOARING SKIES
+</title>
+<div id="header">
+<head id="header">SOARING SKIES
+ <link rel="stylesheet" type="text/css" href="skies.css">
+</head>
+</div>
+<body>
+
+
+
+<br><br>
+<br>
+<br>
+
+
+<form name=frm  method="post" action="regiister.jsp">
+
+<script type="javascript">
+function ValidateForm(frm) 
+{
+if (frm.FirstName.value == "")
+ {
+	alert('First Name is required.');
+	frm.FirstName.focus();
+	return false;
+ }
+if (frm.LastName.value == "") 
+{ 
+	alert('Last Name is required.');
+  frm.LastName.focus();
+	return false;
+ }
+if (frm.FromEmailAddress.value == "") 
+ {
+	alert('Email address is required.');
+	frm.FromEmailAddress.focus();
+ 	return false;}
+if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) 
+ {
+	alert('Please enter a valid email address.');
+	frm.FromEmailAddress.focus();
+	return false;
+ }
+if (frm.Address.value == "") 
+ {
+	alert('Address is required.');
+	frm.Address.focus();
+	return false;
+ }
+if (frm.City.value == "") 
+ {
+	alert('City is required.');
+	frm.City.focus();
+	return false;}
+if (frm.Country.value == "") 
+ { 
+	alert('Country is required.');
+	frm.Country.focus();
+	return false;
+ }
+</script>
+<table border="0" cellpadding="5" cellspacing="0" width="600">
+<tr>
+<td><b>First Name*:</b></td>
+<td>
+<input id="FirstName" name="fname" type="text" size="20" style="width:146px; border:1px solid #999999" /></tr>
+<td><b>Last Name:</b></td>
+<td>
+<input id="LastName" name="lname" type="text" size="20" style="width:146px; border:1px solid #999999" /><br>
+</td></tr>
+<tr><td><b>Credit Card no.*:</b></td>
+<td>
+<input id="CC" name="CCnum" type="text" size="20" style="width:146px; border:1px solid #999999" /><br>
+</tr>
+<tr>
+<td><b>Email address*:</b></td>
+<td><input id="FromEmailAddress" name="ema" type="text" size="30" style="width:300px; border:1px solid #999999" /></td><br>
+</tr><tr>
+<td><b>Cell Phone*:</b></td>
+<td><input id="CellPhone" name="phn" type="text" size="10" style="width:250px; border:1px solid #999999" /></td><br>
+</tr><tr>
+<td><b>Zip Code*:</b></td>
+<td><input id="zip" name="Zip" type="text" size="50" style="width:350px; border:1px solid #999999" /></td><br>
+</tr><tr><td><b>Country*:</b></td>
+<td>
+<input id="country" name="country" type="text" size="20" style="width:146px; border:1px solid #999999" /><br>
+<tr><td><b>City:</b></td>
+<td>
+<input id="city" name="city" type="text" size="20" style="width:146px; border:1px solid #999999" /><br></tr>
+<td><b>State :</b></td>
+<td>
+<input id="state" name="state" type="text" size="20" style="width:146px; border:1px solid #999999" />
+</tr><tr><br>
+<td><b>Account :</b></td>
+<td>
+<input id="acc" name="acc" type="text" size="20" style="width:146px; border:1px solid #999999" />
+</tr><tr><br>
+<td><b>Password*:</b></td>
+<td><input id="pass" name="pass" type="password" size="15" style="width:300px; border:1px solid #999999" /></td>
+</tr><tr><td colspan="2" align="center">
+<br />
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+</tr>
+
+</table>
+<br />
+* - required fields. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<input id="skip_Submit" name="submit" method="post" type="submit" action="regiister.jsp" value="Submit" />
+</td>
+</tr>
+</table>
+<br>
+</form> 
+
+
+
+   
+    </div> <!-- end of content -->
+    
+    <div id="templatemo_footer">
+    
+		<p></p>
+	</div> <!-- end of footer -->
+
+</div> <!-- end of container -->
+<div id="footer">
+soaringskies.com
+</div>
+
+
+
+</body>
+</html>
